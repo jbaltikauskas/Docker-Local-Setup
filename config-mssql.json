@@ -1,5 +1,5 @@
 {
-    "INSTALL_ROOT_FOLDER": "..\\Local-Docker-Installs",
+    "INSTALL_ROOT_FOLDER": "..\\Docker-Local-Setup--Installs",
     "PORT": 1433,
     "HOST_NAME": "localhost",
     "MSSQL_IMAGE": "mcr.microsoft.com/mssql/server:2022-latest",

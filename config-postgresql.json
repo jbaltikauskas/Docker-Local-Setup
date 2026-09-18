@@ -1,5 +1,5 @@
 {
-    "INSTALL_ROOT_FOLDER": "..\\Local-Docker-Installs",
+    "INSTALL_ROOT_FOLDER": "..\\Docker-Local-Setup--Installs",
     "PORT": 5432,
     "HOST_NAME": "localhost",
     "POSTGRES_IMAGE": "postgres:16-alpine",

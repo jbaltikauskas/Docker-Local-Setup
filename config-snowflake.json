@@ -1,5 +1,5 @@
 {
-    "INSTALL_ROOT_FOLDER": "..\\Local-Docker-Installs",
+    "INSTALL_ROOT_FOLDER": "..\\Docker-Local-Setup--Installs",
     "PORT": 8080,
     "HOST_NAME": "localhost",
     "SNOWFLAKE_IMAGE": "ghcr.io/nnnkkk7/snowflake-emulator:latest",

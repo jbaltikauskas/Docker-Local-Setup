@@ -1,5 +1,5 @@
 {
-    "INSTALL_ROOT_FOLDER": "..\\Local-Docker-Installs",
+    "INSTALL_ROOT_FOLDER": "..\\Docker-Local-Setup--Installs",
     "DASHBOARD_UI_PORT": 18888,
     "OTLP_GRPC_PORT": 4317,
     "OTLP_HTTP_PORT": 4318,

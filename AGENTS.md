@@ -4,7 +4,7 @@ This repo provisions local Docker stacks on Windows 11. Root installers create
 self-contained dated install folders under the configured `INSTALL_ROOT_FOLDER`
 with `docker-compose.yml`, config files, generated management scripts, and an
 install-folder `README.md`. The checked-in configs default to
-`..\Local-Docker-Installs`, a folder beside the repo.
+`..\Docker-Local-Setup--Installs`, a folder beside the repo.
 
 Current root installers:
 
