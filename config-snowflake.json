@@ -1,0 +1,13 @@
+{
+    "INSTALL_ROOT_FOLDER": "..\\Local-Docker-Installs",
+    "PORT": 8080,
+    "HOST_NAME": "localhost",
+    "SNOWFLAKE_IMAGE": "ghcr.io/nnnkkk7/snowflake-emulator:latest",
+    "SNOWFLAKE_ACCOUNT": "test",
+    "SNOWFLAKE_USER": "user",
+    "SNOWFLAKE_PASSWORD": "pass",
+    "SNOWFLAKE_WAREHOUSE": "COMPUTE_WH",
+    "SNOWFLAKE_DATABASE": "TEST_DB",
+    "SNOWFLAKE_SCHEMA": "PUBLIC",
+    "SNOWFLAKE_ROLE": "ACCOUNTADMIN"
+}

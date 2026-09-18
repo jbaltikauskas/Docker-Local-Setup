@@ -1,0 +1,13 @@
+{
+    "INSTALL_ROOT_FOLDER": "..\\Local-Docker-Installs",
+    "PORT": 9000,
+    "BIND_ADDRESS": "127.0.0.1",
+    "WEB_HOST": "localhost",
+    "SONARQUBE_IMAGE": "sonarqube:community",
+    "POSTGRES_IMAGE": "postgres:15",
+    "POSTGRES_USER": "Admin",
+    "POSTGRES_PASSWORD": ".Postgres123456789",
+    "POSTGRES_DB": "sonar",
+    "SONAR_ADMIN_USERNAME": "admin",
+    "SONAR_ADMIN_PASSWORD": ".Admin123456789"
+}
