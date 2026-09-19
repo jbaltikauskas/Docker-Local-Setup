@@ -50,4 +50,15 @@ log "Docker group membership for $(whoami)"
 sudo groupadd -f docker
 sudo usermod -aG docker "$(whoami)"
 
+log "Install-root folder beside the repo (installers' default INSTALL_ROOT_FOLDER)"
+# The checked-in configs set INSTALL_ROOT_FOLDER to ..\Docker-Local-Setup--Installs,
+# which resolves to a sibling of the repo checkout. On Linux that parent dir is
+# not user-writable by default, so pre-create the install root owned by the user.
+REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+REPO_PARENT="$(dirname "$REPO_ROOT")"
+INSTALL_ROOT="${REPO_PARENT%/}/Docker-Local-Setup--Installs"
+sudo mkdir -p "$INSTALL_ROOT"
+sudo chown "$(id -u):$(id -g)" "$INSTALL_ROOT"
+echo "Install root ready: $INSTALL_ROOT"
+
 log "install.sh complete"
