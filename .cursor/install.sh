@@ -15,12 +15,17 @@ DOTNET_CHANNEL="8.0"
 log() { printf '\n=== %s ===\n' "$*"; }
 
 log "apt packages (docker, compose v2, fuse-overlayfs, tooling)"
+# fuse3 ships an interactive /etc/fuse.conf conffile prompt. Pass the dpkg
+# force-conf* options so apt never blocks on it (otherwise the prompt aborts
+# the install under `set -e` before any recovery could run). Keep it fully
+# non-interactive and idempotent.
 sudo DEBIAN_FRONTEND=noninteractive apt-get update -qq
 sudo DEBIAN_FRONTEND=noninteractive apt-get install -y -qq --no-install-recommends \
+  -o Dpkg::Options::=--force-confdef -o Dpkg::Options::=--force-confold \
   ca-certificates curl wget apt-transport-https \
   docker.io docker-compose-v2 fuse-overlayfs fuse3 uidmap iptables
-# fuse3 ships an interactive conffile prompt; finish any pending config quietly.
-sudo DEBIAN_FRONTEND=noninteractive dpkg --configure -a --force-confold
+# Belt-and-suspenders: finish any half-configured package non-interactively.
+sudo DEBIAN_FRONTEND=noninteractive dpkg --configure -a --force-confdef --force-confold
 
 log "PowerShell ${POWERSHELL_VERSION}"
 if ! command -v pwsh >/dev/null 2>&1; then
