@@ -1,0 +1,10 @@
+{
+    "INSTALL_ROOT_FOLDER": "..\\Local-DockerStack-Provisioner--Installs",
+    "PORT": 8081,
+    "HEALTH_PORT": 8080,
+    "EXPLORER_PORT": 1234,
+    "HOST_NAME": "localhost",
+    "COSMOSDB_IMAGE": "mcr.microsoft.com/cosmosdb/linux/azure-cosmos-emulator:vnext-latest",
+    "PROTOCOL": "https",
+    "ACCOUNT_KEY": "C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw=="
+}

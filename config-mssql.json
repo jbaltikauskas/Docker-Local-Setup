@@ -1,0 +1,8 @@
+{
+    "INSTALL_ROOT_FOLDER": "..\\Local-DockerStack-Provisioner--Installs",
+    "PORT": 1433,
+    "HOST_NAME": "localhost",
+    "MSSQL_IMAGE": "mcr.microsoft.com/mssql/server:2022-latest",
+    "MSSQL_SA_PASSWORD": "YourStrong@DevPassword123",
+    "MSSQL_PID": "Developer"
+}

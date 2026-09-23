@@ -1,0 +1,9 @@
+{
+    "INSTALL_ROOT_FOLDER": "..\\Local-DockerStack-Provisioner--Installs",
+    "PORT": 5432,
+    "HOST_NAME": "localhost",
+    "POSTGRES_IMAGE": "postgres:16-alpine",
+    "POSTGRES_USER": "dev_user",
+    "POSTGRES_PASSWORD": "dev_password",
+    "POSTGRES_DB": "dev_database"
+}

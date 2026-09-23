@@ -1,0 +1,9 @@
+{
+    "INSTALL_ROOT_FOLDER": "..\\Local-DockerStack-Provisioner--Installs",
+    "DASHBOARD_UI_PORT": 18888,
+    "OTLP_GRPC_PORT": 4317,
+    "OTLP_HTTP_PORT": 4318,
+    "HOST_NAME": "localhost",
+    "ASPIRE_DASHBOARD_IMAGE": "mcr.microsoft.com/dotnet/aspire-dashboard:latest",
+    "ALLOW_ANONYMOUS": true
+}
